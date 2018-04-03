@@ -1,4 +1,7 @@
 {
+  "extends": [
+    "rxjs-tslint-rules"
+  ],
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
@@ -75,6 +78,7 @@
     "no-unused-expression": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
+    "no-unused-variable": true,
     "object-literal-sort-keys": false,
     "one-line": [
       true,
@@ -138,6 +142,18 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "rxjs-add": { 
+      "options": {
+        "allowElsewhere": false,
+        "allowUnused": false,
+        "file": "./src/rxjs.imports.ts"
+      },
+      "severity": "error" 
+    },
+    "rxjs-no-unused-add": { 
+      "severity": "error" 
+    },
+    "rxjs-no-wholesale": { "severity": "error" }
   }
 }

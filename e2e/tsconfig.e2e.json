@@ -10,5 +10,13 @@
       "jasminewd2",
       "node"
     ]
+  },
+  "files": [
+    "../src/app/rxjs-imports.ts"
+  ],
+  "rules": {
+    "rxjs-add": { 
+      "severity": "off" 
+    }
   }
 }
